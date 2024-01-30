@@ -1,10 +1,10 @@
-import React, { Fragment } from "react";
+import React, { children, Fragment } from "react";
 
-function Text() {
+function Text({children}) {
     console.log("Text component");
   return (
     <Fragment>
-      <span>{this.props.children}</span>
+      <span>{children}</span>
     </Fragment>
   );
 }
