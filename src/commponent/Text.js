@@ -1,10 +1,10 @@
 import React, { children, Fragment } from "react";
 
-function Text({children}) {
-    console.log("Text component");
+function Text({ children }) {
+  console.log("Text component");
   return (
     <Fragment>
-      <span>{children}</span>
+      {children ? <span>{children}</span> : <span>no Text</span>}
     </Fragment>
   );
 }

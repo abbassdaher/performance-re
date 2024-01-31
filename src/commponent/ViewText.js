@@ -1,7 +1,7 @@
 import React from "react";
 import Text from "./Text";
 
-function ViewText({ text , age}) {
+function ViewText({ text, age ,}) {
   console.log("viewText component");
 
   const apiConnect = () => {
@@ -11,9 +11,13 @@ function ViewText({ text , age}) {
   apiConnect();
   return (
     <div className="viewText">
-    <button onClick={age}>Age</button>
+      <button onClick={age}>Age</button>
       <p>the include text:</p>
-      <Text>{text.name}</Text>
+      <Text>Name: {text.name}</Text><br />
+      <Text>Age: </Text>
+      <Text>{text.age}</Text>
+
+      
     </div>
   );
 }
