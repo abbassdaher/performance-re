@@ -12,7 +12,7 @@ function ViewText({ text }) {
   return (
     <div className="viewText">
       <p>the include text:</p>
-      <Text>{text}</Text>
+      <Text>{text.name}</Text>
     </div>
   );
 }
